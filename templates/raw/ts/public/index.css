@@ -1,0 +1,187 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+}
+
+ol, ul {
+    padding-left: 30px;
+}
+table {
+    border-collapse: collapse;
+}
+
+.outlined, table, th, td {
+    border: 1px solid;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+
+input {
+    font-size: revert;
+}
+
+input.view {
+    border: none;
+    text-decoration: none;
+    text-underline: none;
+}
+input:invalid {
+    background: #ffdddd;
+    border: 1px solid red;
+}
+input:valid{
+    background: none;
+}
+
+#container {
+    height: 1024px;
+    display: block;
+    width: 100%
+}
+
+button {
+    min-width: 50px;
+    background-color: white;
+    color: black;
+    padding: 1px 2px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px!important;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightgrey;
+}
+
+button:disabled {
+    background-color: white;
+    color: gray;
+    border: 2px solid gray;
+}
+
+.mainPage {
+    border: 1px solid black;
+    padding: 20px;
+    height: auto;
+    position: relative;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: lightgray;}
+
+.labelDropdownButton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.labelDropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.labelValue {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.labelValueButton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin: 10px;
+}
+
+select {
+    height: 30px;
+}
+
+.modalPopup-content {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    padding: 20px;
+    background-color: white;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+#container {
+    position: relative;
+    width: 1024px;
+}
+
+.modalPopup {
+    /*display: none;*/ /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modalPopup div.modalPopup-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+input[readonly] {
+    color: #676767;
+    padding: 2px;
+    margin: 0 0 0 0;
+    background-image: none;
+}
+
+/* TODO THIS WILL BE CHANGED SOON */
+#modalPage {
+    position: absolute;
+    top: 55px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
