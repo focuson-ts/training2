@@ -9,7 +9,6 @@ import {addressViewFullDomainDD} from "./addressView.dataD";
 export const addressViewMainPagePD: ExampleMainPage = {
     name: 'AddressViewMainPage',
     pageType: 'MainPage',
-    // TODO why not having only view mode for main page and edit mode for modal page ?
     modes: [ 'view' ],
     /** Here we need to declare what modal pages we have - make sure you use PD in naming */
     modals: [
